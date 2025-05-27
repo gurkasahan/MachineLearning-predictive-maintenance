@@ -1,41 +1,35 @@
-# MachineLearning-predictive-maintenance
-Machine learning project for predicting equipment failure using operational data, with real-time web app deployment via Streamlit. Customized for learning and demonstration purposes.
-
 # Predictive Maintenance using Machine Learning
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-0.24.2-orange.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-0.87.0-blueviolet.svg)
+![Pandas](https://img.shields.io/badge/Pandas-1.3.3-brightgreen.svg)
+![Joblib](https://img.shields.io/badge/Joblib-1.1.1-yellow.svg)
 
-This project demonstrates a complete machine learning pipeline to predict equipment failure based on operational metrics. The goal is to showcase how AI/ML solutions can be used to support proactive maintenance, reduce downtime, and optimize operational efficiency — aligning with industry applications such as transit operations, manufacturing, and logistics.
+This project was developed by **Gurk Asahan** as part of a personal initiative to demonstrate predictive maintenance using a machine learning pipeline. A Random Forest classifier was trained on synthetic equipment sensor data to predict failure likelihood.
 
-## 🔍 Overview
-
-- **Model:** Random Forest Classifier  
-- **UI:** Streamlit web app  
-- **Dataset:** Synthetic dataset (10,000+ samples, 14 features)  
-- **Output:** Binary classification — Predict whether a machine is likely to fail
-
-## 🚀 Features
-
-- Full data preprocessing: null handling, normalization, encoding
-- Exploratory Data Analysis (EDA)
+## 🔍 Project Highlights
+- End-to-end ML pipeline: data loading, preprocessing, training, and evaluation
+- Real-time prediction interface with **Streamlit**
 - Feature importance analysis
-- Model training, tuning, and evaluation
-- Streamlit-based deployment for real-time predictions
-- Clean and modular code structure for easy extension
+- Deployed model using `joblib` for fast inference
 
-## 🛠️ Tech Stack
-
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Streamlit  
-- Matplotlib, Seaborn  
-
-## 📊 Use Case
-
-Predictive maintenance is a key application of AI/ML in operations-heavy industries. This project serves as a practical example of how data-driven models can be used to anticipate failure and inform maintenance scheduling — critical for environments like transit systems (e.g., TTC), where uptime is essential.
-
-## 🧪 Demo
-
-Run the Streamlit app locally:
-
+## 🚀 Run Locally
+To run the web app locally:
 ```bash
+pip install -r requirements.txt
 streamlit run app.py
+```
+
+## 🗂️ Files
+- `app.py` – Streamlit frontend
+- `Machine_Predictive_Maintenance_Classification.ipynb` – Notebook for training and EDA
+- `model.joblib` – Trained ML model
+- `predictive_maintenance.csv` – Dataset
+- `requirements.txt` – Dependencies
+
+## 📄 License
+This project is licensed under the Apache 2.0 License.
+
+---
+
+**Author**: Gurk Asahan
